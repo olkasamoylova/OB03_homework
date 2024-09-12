@@ -39,3 +39,18 @@ class Reptile(Animal):
 
     def make_sound(self):
         return f"{self.name} шипит"
+
+# Продемонстрируйте полиморфизм: создайте функцию `animal_sound(animals)`, которая принимает список животных и
+# вызывает метод `make_sound()` для каждого животного.
+
+def animal_sound(animals):
+    for animal in animals:
+        print(animal.make_sound())
+
+bird1 = Bird("Воробей", 3, 1.0)
+mammal1 = Mammal("Лев", 5, "Золотой")
+reptile1 = Reptile("Питон", 2, 6)
+
+animals = [bird1, mammal1, reptile1]
+animal_sound(animals)
+
