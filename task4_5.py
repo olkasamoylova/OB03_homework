@@ -61,4 +61,27 @@ class Veterinarian:
     def heal_animal(self, animal):
         print(f"{self.name} лечит {animal.name}.")
 
+# использование классов
 
+bird1 = Bird("Попугай")
+mammal1 = Mammal("Тигр")
+reptile1 = Reptile("Крокодил")
+
+zookeeper1 = ZooKeeper("Алиса Петровна")
+vet1 = Veterinarian("Доктор Смирнова")
+
+zoo = Zoo()
+
+zoo.add_animal(bird1)
+zoo.add_animal(mammal1)
+zoo.add_animal(reptile1)
+
+zoo.add_staff(zookeeper1)
+zoo.add_staff(vet1)
+
+zoo.show_animals()
+zoo.show_staff()
+
+
+zookeeper1.feed_animal(mammal1)
+vet1.heal_animal(reptile1)       

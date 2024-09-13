@@ -1,0 +1,7 @@
+Animals:
+Воробей,Bird
+Снежный барс,Mammal
+Тритон,Reptile
+Staff:
+Петр Савельев,ZooKeeper
+Доктор Анна Зверинцева,Veterinarian
