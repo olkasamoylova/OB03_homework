@@ -53,4 +53,3 @@ reptile1 = Reptile("Питон", 2, 6)
 
 animals = [bird1, mammal1, reptile1]
 animal_sound(animals)
-
